@@ -5,9 +5,63 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(3, 238, 255);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+*{
+  box-sizing: border-box;
+}
+.todo{
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto;
+  max-width: 350px;
+  border-radius: 7%;
+  min-height: 400px;
+  padding: 20px;
+  background-color: rgb(253, 253, 253);
+  color: brown;
+}
+.todo-item{
+  display: flex;
+  justify-content: flex-start;
+}
+.ml-1{
+  margin-left: 10px;
+}
+form{
+  display: flex;
+  width: 100%;
+  margin: 20px auto;
+  justify-content: space-between;
+}
+form input {
+  width: 85%;
+  padding: 7Px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  outline: none;
+
+}
+::placeholder{
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: #888;
+}
+form button{
+  background-color: transparent;
+  border: 1px solid #999;
+  width: 13%;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 7px;
+}
+button:hover{
+  background-color: black;
+  border-color: black;
+  color: #ffffff;
 }
